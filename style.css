@@ -1,0 +1,115 @@
+/*  @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+ */
+:root {
+  --perfect: @import
+    url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: verdana, Arial;
+}
+
+body {
+  background: linear-gradient(#18171759, #2e030a44),
+    center no-repeat url(./img/black-clock.jpg);
+  background-size: cover;
+}
+body::before {
+  content: "";
+}
+
+main {
+  align-content: center;
+  height: 100vh;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(143deg, #7248ee 0%, #81ddf0 55%, #8ee8fa 100%);
+  /*   background: #274;
+ */
+  top: 70px;
+  left: 250px;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+/* 
+main::after{
+  content: '';
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(143deg, #79787d 0%, hsl(190, 64%, 9%) 55%, #1a3237 100%);
+  border-radius: 50%;
+  position: absolute;
+  right: 250px;
+  bottom: 100px;
+  z-index: -1;
+  display: none;
+} */
+ 
+h2 {
+  color: aliceblue;
+  font: 30px verdana;
+  font-weight: 600;
+}
+
+.container {
+  width: 50%;
+  justify-self: center;
+  padding: 50px 20px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  z-index: 1;
+}
+
+.clock-container {
+  display: flex;
+  align-items: center;
+  place-content: center space-around;
+  gap: 1px;
+  font-family: var(--perfect);
+  font-size: 80px;
+  font-weight: 800;
+  color: #ddd;
+}
+
+.calender-container {
+  background: #e0ffff;
+  border-radius: 0 0 20px 20px;
+  padding: 30px;
+}
+
+.month {
+  background: #ff3c01;
+  padding: 20px;
+  color: #ddd;
+  font-weight: 700;
+  font-family: var(--perfect);
+  border-radius: 10px;
+}
+.day {
+  font: 27px Arial;
+  font-weight: 600;
+}
+
+.date {
+  font-family: var(--perfect);
+  font-size: 65px;
+  font-weight: 609;
+  font-family: Impact;
+}
+
+.year {
+  font-family: system-ui;
+  font-weight: 800;
+  font-size: 30px;
+}
