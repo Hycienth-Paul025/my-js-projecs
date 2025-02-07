@@ -91,8 +91,8 @@ h2 {
 .month {
   background: #ff3c01;
   padding: 20px;
-  color: #ddd;
-  font-weight: 700;
+  color: #fff;
+  font-weight: bolder;
   font-family: var(--perfect);
   border-radius: 10px;
 }
