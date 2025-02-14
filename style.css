@@ -17,9 +17,6 @@ body {
     center no-repeat url(./img/black-clock.jpg);
   background-size: cover;
 }
-body::before {
-  content: "";
-}
 
 main {
   align-content: center;
@@ -34,13 +31,13 @@ main::before {
   background: linear-gradient(143deg, #7248ee 0%, #81ddf0 55%, #8ee8fa 100%);
   /*   background: #274;
  */
-  top: 70px;
-  left: 250px;
+  top: 100px;
+  left: 350px;
   border-radius: 20px;
   z-index: -1;
 }
 
-/* 
+/*
 main::after{
   content: '';
   width: 180px;
@@ -53,7 +50,7 @@ main::after{
   z-index: -1;
   display: none;
 } */
- 
+
 h2 {
   color: aliceblue;
   font: 30px verdana;
@@ -61,9 +58,9 @@ h2 {
 }
 
 .container {
-  width: 50%;
+  max-width: 100%;
   justify-self: center;
-  padding: 50px 20px 20px;
+  padding: 50px 40px 20px;
   border-radius: 10px;
   margin-top: 20px;
   backdrop-filter: blur(10px);
@@ -73,8 +70,8 @@ h2 {
 
 .clock-container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  place-content: center space-around;
   gap: 1px;
   font-family: var(--perfect);
   font-size: 80px;
@@ -98,7 +95,7 @@ h2 {
 }
 .day {
   font: 27px Arial;
-  font-weight: 600;
+ font-weight: 600;
 }
 
 .date {
@@ -112,4 +109,11 @@ h2 {
   font-family: system-ui;
   font-weight: 800;
   font-size: 30px;
+}
+
+@media screen and (max-width: 950px){
+main::before{
+  display: none;
+}
+
 }
